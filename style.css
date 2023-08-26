@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-odd: #333;
+    --background-even: #444;
+}
+
+#modeBtn {
+    position: fixed;
+    right: 1%;
+    z-index: 1;
+    top: 1%;
+}
+#modeBtn button {
+    width: 100px;
+    height: 35px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.1);
+    background-color: var(--background-odd);
+    text-transform: uppercase;
+}
+
+section:nth-child(even) {
+    background-color: var(--background-even);
+}
+
+
+@media screen and (max-width: 830px) {
+    section {
+        font-size: 3rem;
+    }
+}
