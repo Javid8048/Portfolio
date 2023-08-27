@@ -40,6 +40,22 @@ section:nth-child(even) {
     background-color: var(--background-even);
 }
 
+header {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: 400px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
 
 @media screen and (max-width: 830px) {
     section {
