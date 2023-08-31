@@ -1,6 +1,9 @@
 // const getBgColor = window.getComputedStyle(document.documentElement)
 // .getPropertyValue('--background-even');
 // console.log(getBgColor,); //*to see the color in console
+$("document").ready(()=> {
+    window.location.hash = "#home";
+})
 
 document.getElementById("darkMode").addEventListener("click", ()=> {
     document.documentElement.style.setProperty("--background-odd", "#222");
